@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="patrol_world">
+    <include><uri>model://sun</uri></include>
+    <include><uri>model://ground_plane</uri></include>
+    <model name="wall_north">
+      <static>true</static><pose>0 2 0.25 0 0 0</pose>
+      <link name="link"><collision name="c"><geometry><box><size>4 0.1 0.5</size></box></geometry></collision><visual name="v"><geometry><box><size>4 0.1 0.5</size></box></geometry></visual></link>
+    </model>
+    <model name="wall_south">
+      <static>true</static><pose>0 -2 0.25 0 0 0</pose>
+      <link name="link"><collision name="c"><geometry><box><size>4 0.1 0.5</size></box></geometry></collision><visual name="v"><geometry><box><size>4 0.1 0.5</size></box></geometry></visual></link>
+    </model>
+    <model name="wall_east">
+      <static>true</static><pose>2 0 0.25 0 0 1.5708</pose>
+      <link name="link"><collision name="c"><geometry><box><size>4 0.1 0.5</size></box></geometry></collision><visual name="v"><geometry><box><size>4 0.1 0.5</size></box></geometry></visual></link>
+    </model>
+    <model name="wall_west">
+      <static>true</static><pose>-2 0 0.25 0 0 1.5708</pose>
+      <link name="link"><collision name="c"><geometry><box><size>4 0.1 0.5</size></box></geometry></collision><visual name="v"><geometry><box><size>4 0.1 0.5</size></box></geometry></visual></link>
+    </model>
+  </world>
+</sdf>

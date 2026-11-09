@@ -1,0 +1,2 @@
+# PL2303 (STM32 侧 UART1 桥接) 固定为 robot_mcu
+SUBSYSTEM=="tty", ATTRS{idVendor}=="067b", ATTRS{idProduct}=="2303", SYMLINK+="robot_mcu", MODE="0666"

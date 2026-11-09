@@ -1,0 +1,10 @@
+# PC 端 Python 依赖（Ubuntu 22.04 + ROS2 Humble）
+
+# ROS2 Humble 本体、Gazebo、Nav2、CycloneDDS 由系统 apt 安装：
+#   sudo apt install ros-humble-desktop ros-humble-navigation2 \
+#       ros-humble-nav2-bringup ros-humble-slam-toolbox \
+#       ros-humble-cyclonedds ros-humble-rmw-cyclonedds-cpp gazebo
+
+PyQt5>=5.15
+pyserial>=3.5
+numpy>=1.21

@@ -1,0 +1,14 @@
+# RK3588 端 Python 依赖（Ubuntu 22.04 + ROS2 Humble + RKNN 生态）
+
+# 系统级（apt / 瑞芯微官方 SDK，pip 装不到，见 README_MODELS.md）：
+#   - ROS2 Humble + rmw-cyclonedds-cpp
+#   - rknn-toolkit-lite2（RKNNLite API，官方 aarch64 wheel）
+#   - rknn-llm 运行时 + flask 服务模板（flask_server.py 基于此修改）
+
+pyserial>=3.5
+numpy>=1.21
+opencv-python>=4.5      # RTSP 取流 + JPG 编解码
+flask>=2.0              # flask_server.py 的 LLM HTTP 服务
+sounddevice>=0.4        # assistant.py 采集 ReSpeaker 麦克风
+scipy>=1.7              # assistant.py 重采样 resample_poly
+sherpa-onnx>=1.10       # KWS 唤醒 + SenseVoice ASR + MeloTTS

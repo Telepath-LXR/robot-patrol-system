@@ -1,0 +1,63 @@
+# --- ROS2 / colcon ---
+build/
+install/
+log/
+*.pyc
+__pycache__/
+.pytest_cache/
+
+# --- 运行时产物（不入库）---
+*.wav
+*.mp3
+*.pcm
+safe_records/
+danger_records/
+pending_records/
+records/
+*.bag
+*.db3
+*.mcap
+
+# --- 模型权重（体积大，见 rk3588/README_MODELS.md）---
+*.rknn
+*.onnx
+*.bin
+*.pt
+*.pth
+models/
+model/
+tts_model/
+
+# --- 虚拟环境 ---
+venv/
+voice/voice/
+.venv/
+
+# --- STM32：CubeMX 可再生成的部分与 Keil 中间产物 ---
+firmware/*/Drivers/
+firmware/*/Middlewares/
+firmware/*/MDK-ARM/Listings/
+firmware/*/MDK-ARM/Objects/
+*.crf
+*.d
+*.o
+*.lst
+*.htm
+*.dep
+*.lnp
+*.build_log.htm
+*.uvguix.*
+*.scvd
+
+# --- 编辑器 / 系统 ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# --- 凭据（用环境变量或本地文件，不要提交真实值）---
+.env
+secrets.txt

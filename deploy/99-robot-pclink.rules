@@ -1,0 +1,2 @@
+# RK3588 console UART (ttyFIQ0) 固定为 robot_pclink
+KERNEL=="ttyFIQ0", SYMLINK+="robot_pclink", MODE="0666"
